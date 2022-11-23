@@ -1,0 +1,208 @@
+body{
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-image: url('compa.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: black;
+  
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+  color: white;   
+}
+
+.logo:first-letter{
+color: red;
+}
+span{
+    color: red; 
+}
+ul{
+   
+    margin: 0;
+    
+    background-color: black;
+}
+li{
+   margin-top: 10px;
+    display: inline-block;
+    padding: 20px;
+    
+}
+li a{
+   
+ color: white;
+ text-decoration: none;
+ padding: 20px;
+ font-size: 20px;
+}
+a:hover{
+    text-decoration: 3px red underline;
+    
+    transition: 0.4s ease-in-out;
+    
+}
+.container{
+
+    text-align: center;
+
+    position: absolute;
+
+    top: 60%;
+
+    left: 80%;
+
+    transform: translate(-50%, -50%);
+
+    width: 350px;
+
+    height: 400px;
+
+    background-color:white;
+
+        border-radius: 10px;
+
+        animation: back 30s infinite;
+
+        box-shadow: 5px 5px 10px white;
+
+  }
+
+  @keyframes back{
+
+    0%{
+
+      background-image: linear-gradient(rgba(0,255,255,0.8),yellow);
+
+      
+
+filter: hue-rotate(0deg);
+
+    }
+
+   
+
+    50%{
+
+      background-image:linear-gradient(yellow,cyan);
+
+box-shadow: 20px 5px 10px black;
+
+    }
+
+  
+
+100%{
+
+      background-image:linear-gradient(white,cyan);
+
+filter: hue-rotate(360deg);
+
+box-shadow: 10px 10px 10px white;
+
+    }
+
+  }
+
+  .inpu{
+
+    background-color: transparent;
+
+    margin-top: 15px;
+
+    width: 150px;
+
+    height: 30px;
+
+    border: 1px solid white;
+
+  }
+
+  h1{
+
+    font-family: Courier New;
+
+  }
+
+  .login{
+
+    margin-top: 60px;
+
+   margin-left: 10px;
+
+  }
+
+  .inpu:focus{
+
+    
+
+    border: none;
+
+    
+
+    border-bottom: 2px solid red;
+
+    transition: 0.4s ease-in-out;
+
+    outline:none;
+
+    width: 200px;
+
+  }
+
+  ::placeholder{
+
+    font-size: 15px;
+
+    font-family:Courier New;
+
+    color: red;
+
+  }
+
+  input[type=submit]{
+
+    width: 100px;
+
+    height: 30px;
+
+    margin-top: 50px;
+
+    background-color: black;
+
+    border: 1px solid black;
+
+    font-family: Courier New;
+
+    color: white;
+
+    font-size: 20px;
+
+  }
+
+  .icons{
+    margin-top: 70px;
+  }
+
+  .icons i{
+
+    padding: 6px;
+
+  }
+
+.sign{
+    margin-top:250px;
+    font-size: 40px;
+    color: white;
+}
+.sign a{
+    color: yellow;
+}
